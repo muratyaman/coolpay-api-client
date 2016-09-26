@@ -68,6 +68,10 @@ logout and login again
 
 ### beego framework, bee tool, uuid library
 
+[http://beego.me/](http://beego.me/) 
+
+a framework providing MVC, routing, controllers, models, automated swagger documentation of API, etc.
+
 `go get github.com/astaxie/beego`
 
 `go install github.com/astaxie/beego`
