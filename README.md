@@ -61,6 +61,8 @@ logout and login again
 
 `go install  github.com/astaxie/beego`
 
+`go get github.com/beego/bee`
+
 ### clone this repo
 
 `git clone https://github.com/muratyaman/coolpay-api-client.git`
