@@ -24,6 +24,12 @@ running on a vagrant box using fedora 24
 
 `vagrant ssh`
 
+`sudo dnf update`
+
+### mysql community server 5.7
+
+`sudo dnf install mysql-community-server-5.7.15-1.fc24.x86_64`
+
 ### go language
 
 `sudo dnf install go`
