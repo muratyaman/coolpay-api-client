@@ -47,18 +47,13 @@ edit .bash_profile
 include the following:
 
 
-> GOROOT=/usr/local/go/bin
-
 > GOPATH=$HOME/gocode
 
-> PATH=$PATH:$HOME/.local/bin:$HOME/bin:$GOROOT:$GOPATH/bin
+> PATH=$PATH:$HOME/.local/bin:$HOME/bin:$GOPATH/bin
 
 > export PATH
 
-> export GOROOT
-
 > export GOPATH
-
 
 
 logout and login again
@@ -71,13 +66,15 @@ logout and login again
 
 `sudo dnf install git`
 
-### beego framework
+### beego framework, bee tool, uuid library
 
 `go get github.com/astaxie/beego`
 
-`go install  github.com/astaxie/beego`
+`go install github.com/astaxie/beego`
 
 `go get github.com/beego/bee`
+
+`go get github.com/satori/go.uuid`
 
 ### clone this repo
 
