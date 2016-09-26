@@ -41,13 +41,17 @@ edit .bash_profile
 include the following:
 
 
-> GOPATH=/usr/local/go/bin
+> GOROOT=/usr/local/go/bin
 
-> PATH=\$PATH:\$HOME/.local/bin:\$HOME/bin:\$GOPATH
+> GOPATH=$HOME/gocode
+
+> PATH=$PATH:$HOME/.local/bin:$HOME/bin:$GOROOT:$GOPATH/bin
 
 > export PATH
 
-> export GOPATH=\$HOME/gocode
+> export GOROOT
+
+> export GOPATH
 
 
 
