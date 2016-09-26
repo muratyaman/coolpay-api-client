@@ -36,9 +36,13 @@ include the following:
 
 
 > GOPATH=/usr/local/go/bin
+
 > PATH=\$PATH:\$HOME/.local/bin:\$HOME/bin:\$GOPATH
+
 > export PATH
+
 > export GOPATH=\$HOME/gocode
+
 
 
 logout and login again
