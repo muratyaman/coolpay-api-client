@@ -34,6 +34,12 @@ running on a vagrant box using fedora 24
 
 `sudo dnf install go`
 
+`mkdir ~/gocode`
+
+`mkdir ~/gocode/src`
+
+`mkdir ~/gocode/bin`
+
 edit .bash_profile
 
 `vi .bash_profile`
@@ -75,8 +81,15 @@ logout and login again
 
 ### clone this repo
 
+
+`cd ~`
+
 `git clone https://github.com/muratyaman/coolpay-api-client.git`
 
-`cd coolpay-api-client`
+`cd gocode/src`
+
+`ln -s ~/coolpay-api-client/myapi myapi`
+
+
 
 
