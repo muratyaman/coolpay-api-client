@@ -78,7 +78,6 @@ logout and login again
 
 ### clone this repo
 
-
 `cd ~`
 
 `git clone https://github.com/muratyaman/coolpay-api-client.git`
@@ -88,5 +87,11 @@ logout and login again
 `ln -s ~/coolpay-api-client/myapi myapi`
 
 
+### create database
+
+check and run the SQL files in folder db-migration
 
 
+### run app
+
+`bee run`
