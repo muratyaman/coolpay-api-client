@@ -108,15 +108,22 @@ check and run the SQL files in folder db-migration
 
 
 to get a new token
+
 HTTP POST http://localhost:8080/v1/request/login
 
+
 to create a recipient
+
 HTTP POST http://localhost:8080/v1/request/recipient
 
+
 to create a payment
+
 HTTP POST http://localhost:8080/v1/request/payment
 
+
 to get details of a payment
+
 HTTP GET http://localhost:8080/v1/request/payment/payment-id
 
 
