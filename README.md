@@ -107,24 +107,22 @@ check and run the SQL files in folder db-migration
 ## api end-points
 
 
-to get a new token
-
-HTTP POST http://localhost:8080/v1/request/login
-
-
-to create a recipient
-
-HTTP POST http://localhost:8080/v1/request/recipient
+to get a new token:
+* HTTP POST http://localhost:8080/v1/coolpay/login
 
 
-to create a payment
 
-HTTP POST http://localhost:8080/v1/request/payment
+to create a recipient:
+* HTTP POST http://localhost:8080/v1/coolpay/recipient
 
 
-to get details of a payment
 
-HTTP GET http://localhost:8080/v1/request/payment/payment-id
+to create a payment:
+* HTTP POST http://localhost:8080/v1/coolpay/payment
+
+
+to get details of a payment:
+* HTTP GET http://localhost:8080/v1/coolpay/payment/payment-id
 
 
 
