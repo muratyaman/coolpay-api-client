@@ -80,7 +80,9 @@ a framework providing MVC, routing, controllers, models, automated swagger docum
 
 `go get github.com/satori/go.uuid`
 
-### clone this repo
+## setup
+
+## clone this repo
 
 `cd ~`
 
@@ -90,12 +92,33 @@ a framework providing MVC, routing, controllers, models, automated swagger docum
 
 `ln -s ~/coolpay-api-client/myapi myapi`
 
-
 ### create database
 
 check and run the SQL files in folder db-migration
 
+### check config
 
-### run app
+`vi myapi/conf/app.conf`
+
+## run app
 
 `bee run`
+
+## api end-points
+
+
+to get a new token
+HTTP POST http://localhost:8080/v1/request/login
+
+to create a recipient
+HTTP POST http://localhost:8080/v1/request/recipient
+
+to create a payment
+HTTP POST http://localhost:8080/v1/request/payment
+
+to get details of a payment
+HTTP GET http://localhost:8080/v1/request/payment/payment-id
+
+
+
+
