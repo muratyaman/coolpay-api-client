@@ -1,10 +1,10 @@
 package controllers
 
 import (
-  "myapi/models"
   "encoding/json"
-
   "github.com/astaxie/beego"
+
+  "myapi/models"
 )
 
 // Operations about Requests
@@ -77,27 +77,15 @@ func (u *CoolpayController) Put() {
   u.ServeJSON()
 }
 
-// @Title Delete
-// @Description delete the request
-// @Param   id  path     string  true    "The id you want to delete"
-// @Success 200 {string} delete success!
-// @Failure 403 id is empty
-// @router /:id [delete]
-func (u *CoolpayController) Delete() {
-  id := u.GetString(":id")
-  models.DeleteRequest(id)
-  u.Data["json"] = "delete success!"
-  u.ServeJSON()
-}
-
 // @Title Login
 // @Description Logs request into the system
 // @Success 200 {string} login success
 // @Failure 403 request not exist
 // @router /login [post]
 func (u *CoolpayController) RequestLogin() {
-  if models.RequestLogin() {
-    u.Data["json"] = "login success"
+  token, err := models.RequestLogin()
+  if err == nil {
+    u.Data["json"] = token
   } else {
     u.Data["json"] = "request not exist"
   }
